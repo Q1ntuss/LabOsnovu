@@ -1,1 +1,331 @@
-sdsds
+#===========================================
+# Python та Flask
+# ===========================================
+# Байтекод та компільовані файли
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Дистрибутиви Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+
+# Встановлені пакети
+site-packages/
+
+# Віртуальні оточення
+venv/
+env/
+.venv/
+.env/
+ENV/
+
+# pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath
+.sage
+
+# dotenv
+.env
+.env.local
+.env.*.local
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# ===========================================
+# SQLite бази даних
+# ===========================================
+# Файли бази даних SQLite
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# Резервні копії БД
+*.db.backup
+*.db.bak
+*.db.tmp
+
+# ===========================================
+# Node.js / JavaScript
+# ===========================================
+# Залежності
+node_modules/
+jspm_packages/
+
+# npm та yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.lock-wscript
+
+# Папки пакетів
+package-lock.json
+yarn.lock
+
+# Bower
+bower_components/
+
+# TypeScript
+*.tsbuildinfo
+
+# Parcel
+.cache/
+.parcel-cache/
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+.nuxt-prod/
+
+# Gatsby
+.cache/
+public
+
+# Angular
+dist/
+.angular/
+
+# Vue.js
+dist/
+
+# Svelte
+.svelte-kit/
+
+# ===========================================
+# Операційні системи
+# ===========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Linux
+*~
+
+# KDE
+.directory
+
+# ===========================================
+# Редактори та IDE
+# ===========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Sublime Text
+*.sublime-*
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.session.vim
+.netrwhist
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/
+nb-configuration.xml
+
+# ===========================================
+# Веб-проєкт специфічне
+# ===========================================
+# Файли сесій
+flask_session/
+
+# Кеш Flask
+.flask_cache/
+
+# Файли завантажень
+uploads/
+temp/
+tmp/
+
+# Логи
+*.log
+logs/
+
+# Конфігураційні файли з секретами
+config.py
+secrets.py
+credentials.json
+*.pem
+*.key
+*.crt
+
+# Файли змінних оточення
+.env
+.env.local
+.env.*.local
+
+# Flask debug toolbar
+debug_toolbar_*
+
+# ===========================================
+# Збірка та деплой
+# ===========================================
+# Файли збірки
+build/
+dist/
+static/dist/
+assets/compiled/
+
+# Документація
+docs/_build/
+_site/
+
+# Docker
+Dockerfile
+docker-compose.yml
+.dockerignore
+
+# Heroku
+.heroku/
+
+# Файли деплою
+.deploy/
+.deployment
+
+# ===========================================
+# Фронтенд (HTML/CSS/JS)
+# ===========================================
+# Мініфіковані файли
+*.min.css
+*.min.js
+
+# Карти джерел (source maps)
+*.map
+
+# Автозгенеровані файли
+.stylelintcache
+.eslintcache
+
+# Бандлери
+webpack-assets.json
+
+# ===========================================
+# Тестування
+# ===========================================
+# Pytest
+.pytest_cache/
+
+# Coverage
+.coverage
+coverage.xml
+htmlcov/
+
+# !ВАЖЛИВО: Не ігноруйте такі файли
+!.gitignore
+!README.md
+!requirements.txt
+!package.json (якщо є)
+!pyproject.toml
+!setup.py
+!setup.cfg
+!MANIFEST.in
+
+# ===========================================
+# Файли для прикладу структури
+# ===========================================
+# Приклад структури
+# project/
+# ├── app/
+# │   ├── __init__.py
+# │   ├── models.py
+# │   ├── routes.py
+# │   └── templates/
+# ├── instance/          # Конфігурація та БД
+# │   └── app.db        # SQLite база 
+# ├── static/
+# │   ├── css/
+# │   ├── js/
+# │   └── images/
+# ├── tests/
+# ├── venv/              # Віртуальне оточення 
+# ├── .env               # Змінні оточення 
+# ├── .gitignore         # Цей файл
+# ├── requirements.txt   # Залежності Python
+# ├── app.py            # Основний файл Flask
+# └── README.md
